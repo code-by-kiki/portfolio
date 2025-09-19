@@ -21,8 +21,8 @@ return (
 <div>
 <Navbar />
 <main className="pt-5 mt-5">
-<Section id="home" title="">.
-    <Home/>
+<Section id="home" title="Home">
+ <Home/>
 </Section>
 <Section id="about" title="About">About content — add whatever you need here.
     <About/>

@@ -1,13 +1,12 @@
 import React from 'react';
 import picture from "../assest/profile-pic.jpg";
-import About from './About';
-import Navbar from './navbar';
 
 function Home()
 {
  return (
-    <section style={{ backgroundColor: 'snow' }}   >
-      <div className='container'>
+  <div style={{ backgroundColor: 'rgb(211, 218, 217)' }} className='container-fulid' >
+    <section >
+      <div >
         <div className='row mb-5 mt-5 pt-5 justify-content-center'>
 
           <div className='col-xl-4 mt-5 pt-5 me-5 mb-5' >
@@ -15,7 +14,7 @@ function Home()
           </div>
 
           <div className='col-xl-6 me-2' >
-            <h2 className='text-center mt-5 fw-bold text-primary'>
+            <h2 className='text-center mt-5 fw-bold ' style={{color:'rgb(113, 90, 90)'}}>
               <i>Introduction</i>
             </h2>
             <p className='card p-4 mt-4 fs-5' style={{ textIndent: '3em', backgroundColor: '#f8f9fa' }}>
@@ -29,6 +28,7 @@ function Home()
         </div>
       </div>
     </section>
+  </div>  
   );
 };
 
