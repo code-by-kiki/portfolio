@@ -46,7 +46,7 @@ el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
 
 return (
-<nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+<nav className="navbar navbar-expand-lg navbar-light  fixed-top shadow-sm" style={{backgroundColor:'none'}}>
 <div className="container">
 <a className="navbar-brand fw-bold" href="#home" onClick={() => handleNavClick('home')}>Krithika</a>
 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

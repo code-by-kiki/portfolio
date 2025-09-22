@@ -1,35 +1,49 @@
 import React from 'react';
-import picture from "../assest/profile-pic.jpg";
+import 'animate.css';
+import picture from '../assest/profile-pic.jpg';
+import 'bootstrap/dist/js/bootstrap.bundle.min'; 
 
-function Home()
-{
- return (
-  <div style={{ backgroundColor: 'rgb(211, 218, 217)' }} className='container-fulid' >
-    <section >
-      <div >
-        <div className='row mb-5 mt-5 pt-5 justify-content-center'>
+const Introduction = () => {
+  return (
+    <div style={{ backgroundColor: '#e3e6e5', minHeight: '100vh', padding: '4rem 0' }}>
+      <body style={{ backgroundColor: '#e3e6e5', minHeight: '100vh', padding: '4rem 0' }}>
 
-          <div className='col-xl-4 mt-5 pt-5 me-5 mb-5' >
-            <img src={picture} alt="Profile" className="img-fluid rounded shadow" width={450} height={450} />
+      </body>
+      <div className="container">
+        <div className="row justify-content-center align-items-center">
+          
+          <div className="col-md-5 text-center animate__animated animate__fadeInLeft">
+            <img
+              src={picture}
+              alt="Krithika Profile"
+              className="img-fluid   shadow mb-5"
+              style={{ maxWidth: '350px', borderRadius:'50px' }}
+            />
           </div>
 
-          <div className='col-xl-6 me-2' >
-            <h2 className='text-center mt-5 fw-bold ' style={{color:'rgb(113, 90, 90)'}}>
+          {/* Text Section */}
+          <div className="col-md-7 animate__animated animate__fadeInRight">
+            <h2
+              className="text-center fw-bold mb-4"
+              style={{ color: '#715a5a', fontFamily: 'Playfair Display, serif' }}
+            >
               <i>Introduction</i>
             </h2>
-            <p className='card p-4 mt-4 fs-5' style={{ textIndent: '3em', backgroundColor: '#f8f9fa' }}>
-             Hi, I’m <strong>Krithika</strong> —a B.A. Economics graduate with a deep passion for web development and digital innovation. My academic background has sharpened my 
-             analytical thinking and decision-making abilities, allowing me to assess solutions from multiple angles and choose the most effective path forward.
-            As a web developer, I prioritize the user experience, crafting intuitive and responsive web pages that are both visually appealing and functionally seamless. 
-            I thrive on transforming ideas into interactive digital solutions that connect with users and deliver real value.
-            </p>
+            <div className="card p-4 shadow-sm" style={{ backgroundColor: '#f8f9fa' }}>
+              <p className="fs-5" style={{ textIndent: '2em', lineHeight: '1.8' }}>
+                Hi, I’m Krithika — a B.A. Economics graduate with a deep passion for web development and digital innovation.
+                My academic background has sharpened my analytical thinking and decision-making abilities, allowing me to assess
+                solutions from multiple angles and choose the most effective path forward. As a web developer, I prioritize the
+                user experience, crafting intuitive and responsive web pages that are both visually appealing and functionally
+                seamless. I thrive on transforming ideas into interactive digital solutions that connect with users and deliver
+                real value.
+              </p>
+            </div>
           </div>
-
         </div>
       </div>
-    </section>
-  </div>  
+    </div>
   );
-};
+}
 
-export default Home;
+export default Introduction;
