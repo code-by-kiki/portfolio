@@ -11,7 +11,6 @@ const SkillsScroll = () => {
     { name: 'SQL', level: 'Intermediate' },
     { name: 'HTML/CSS', level: 'Expert' },
     { name: 'Git & GitHub', level: 'Advanced' },
-    { name: 'REST APIs', level: 'Advanced' },
     { name: 'JavaScript', level: 'Advanced' },
   ];
 
@@ -31,13 +30,7 @@ const SkillsScroll = () => {
   return (
     <div style={{ padding: '2rem' }}>
       <h3 style={{ textAlign: 'center', marginBottom: '1rem' }}>💡 My Skills</h3>
-      <div style={{
-        display: 'flex',
-        overflowX: 'auto',
-        gap: '1rem',
-        paddingBottom: '1rem',
-        scrollbarWidth: 'thin'
-      }}>
+      <div style={{  display: 'flex',  overflowX: 'auto',  gap: '1rem',  paddingBottom: '1rem',  scrollbarWidth: 'thin' }}>
         {skills.map((skill, index) => (
           <div
             key={skill.name}

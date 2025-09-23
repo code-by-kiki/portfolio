@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import anime from 'animejs';
-import SkillsScroll from './Skills';
+
 
 const About = () => {
   const aboutRef = useRef(null);
@@ -32,11 +32,12 @@ const About = () => {
       }, '-=400');
   }, []);
   
-  <SkillsScroll/>
+
 
   const certifications = [
-    { title: 'Java Full Stack Development', issuer: 'XYZ Institute', year: '2025' },
-    { title: 'Economics Degree', issuer: 'Your University', year: '2024' }
+    { title: 'Java Full Stack Development', issuer: 'ecareerpluz', year: '2025' },
+    { title: 'Digital Marketing', issuer: 'ecareerpluz', year: '2025' },
+    { title: 'Economics Degree', issuer: 'Lady Doak College', year: '2025' },
   ];
 
   const hobbies = ['🎨 Drawing', '📚 Reading', '🎶 Music', '🧘‍♀️ Yoga'];
