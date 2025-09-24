@@ -2,6 +2,7 @@ import React from "react";
 import Home from "../components/home";
 import About from "../components/About";
 import Navbar from '../components/navbar';
+import Datas from "./Resume";
 
 
 function Section({ id, title, children }) {
@@ -24,13 +25,19 @@ return (
 <Section id="home" title="Home">
  <Home/>
 </Section>
-<Section id="about" title="About">About content — add whatever you need here.
+<Section id="about" title="About">About 
     <About/>
 </Section>
 
-<Section id="project" title="Project">Services content — explain your features.</Section>
-<Section id="resume" title="Resume">Services content — explain your features.</Section>
-<Section id="contact" title="Contact">Contact form or details here.</Section>
+<Section id="project" title="Project">
+ 
+</Section>
+
+<Section id="resume" title="Resume">
+       <Datas/>
+</Section>
+
+<Section id="contact" title="Contact"></Section>
 </main>
 </div>
 );

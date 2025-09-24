@@ -16,7 +16,7 @@ const Introduction = () => {
             <img
               src={picture}
               alt="Krithika Profile"
-              className="img-fluid   shadow mb-5"
+              className="img-fluid   shadow mt-5"
               style={{ maxWidth: '350px', borderRadius:'50px' }}
             />
           </div>
@@ -29,7 +29,7 @@ const Introduction = () => {
             >
               <i>Introduction</i>
             </h2>
-            <div className="card p-4 shadow-sm" style={{ backgroundColor: '#f8f9fa' }}>
+            <div className="card p-4 shadow-sm col-sm-12" style={{ backgroundColor: '#f8f9fa' }}>
               <p className="fs-5" style={{ textIndent: '2em', lineHeight: '1.8' }}>
                 Hi, I’m Krithika — a B.A. Economics graduate with a deep passion for web development and digital innovation.
                 My academic background has sharpened my analytical thinking and decision-making abilities, allowing me to assess

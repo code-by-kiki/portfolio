@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import anime from 'animejs';
+import SkillsScroll from './Skills'
+
 
 
 const About = () => {
@@ -38,9 +40,10 @@ const About = () => {
     { title: 'Java Full Stack Development', issuer: 'ecareerpluz', year: '2025' },
     { title: 'Digital Marketing', issuer: 'ecareerpluz', year: '2025' },
     { title: 'Economics Degree', issuer: 'Lady Doak College', year: '2025' },
+    // {title:'Nss',issuer:'Lady Doak College',year:'2025'}
   ];
 
-  const hobbies = ['🎨 Drawing', '📚 Reading', '🎶 Music', '🧘‍♀️ Yoga'];
+  const hobbies = [ '🍳 Cooking', '🎶 Music', '🧘‍♀️ Yoga'];
 
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', padding: '2rem', maxWidth: '900px', margin: 'auto' }}>
@@ -60,10 +63,12 @@ const About = () => {
         </p>
       </div>
 
+      <SkillsScroll/>
+
       {/* Certifications Section */}
-      <div ref={certRef} style={{ marginBottom: '2rem' }}>
+      <div ref={certRef} style={{ marginTop: '5rem' }}>
         <h3>Certifications</h3>
-        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '1rem'}} className='col-lg-12'>
           {certifications.map(cert => (
             <div key={cert.title} style={{
               background: '#f0f0f0',
@@ -80,15 +85,17 @@ const About = () => {
         </div>
       </div>
 
-      {/* Hobbies Section */}
-      <div ref={hobbiesRef}>
-        <h3>Hobbies</h3>
-        <ul style={{ listStyle: 'none', paddingLeft: 0, fontSize: '1.2rem' }}>
-          {hobbies.map(hobby => (
-            <li key={hobby} style={{ marginBottom: '0.5rem' }}>{hobby}</li>
-          ))}
-        </ul>
+   <div style={{marginTop:"5rem"}}>
+  <h4 className="text-center mb-4"> My Hobbies</h4>
+  <div className="d-flex flex-wrap justify-content-center gap-3">
+    {hobbies.map((hobby, index) => (
+      <div key={index} className="hobby-card p-3 text-center">
+        <i className="bi bi-star-fill text-warning mb-2"></i>
+        <h6 className="mb-0">{hobby}</h6>
       </div>
+    ))}
+  </div>
+</div>
     </div>
   );
 };
