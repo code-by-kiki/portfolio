@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import anime from 'animejs';
-import SkillsScroll from './Skills'
+import SwipeableCards from './Skills'
 
 
 
@@ -63,7 +63,7 @@ const About = () => {
         </p>
       </div>
 
-      <SkillsScroll/>
+      <SwipeableCards/>
 
       {/* Certifications Section */}
       <div ref={certRef} style={{ marginTop: '5rem' }}>

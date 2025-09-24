@@ -25,7 +25,7 @@ return (
 <Section id="home" title="Home">
  <Home/>
 </Section>
-<Section id="about" title="About">About 
+<Section id="about" title="About"> 
     <About/>
 </Section>
 

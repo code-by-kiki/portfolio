@@ -10,11 +10,11 @@
     "animate.css": "^4.1.1",
     "animejs": "^3.2.2",
     "bootstrap": "^5.3.8",
+    "framer-motion": "^12.23.21",
     "gsap": "^3.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-scripts": "5.0.1",
-    "react-swipeable-cards": "^1.0.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
