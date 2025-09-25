@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const skills = [
-  { name: "Java", color: "#f7df1e" },
-  { name: "Html", color: "#f7df1e" },
-  { name: "Css", color: "#f7df1e" },
-  { name: "Bootstrap", color: "#f7df1e" },
-  { name: "My SQL", color: "#f7df1e" },
-  { name: "Git-Hub", color: "#f7df1e" },
-  { name: "React", color:  "#f7df1e" },
-  { name: "Node.js", color:  "#f7df1e" }
+  { name: "Java", color: "rgb(113, 90, 90)" },
+  { name: "Html", color: "rgb(113, 90, 90)" },
+  { name: "Css", color: "rgb(113, 90, 90)" },
+  { name: "Bootstrap", color: "rgb(113, 90, 90)" },
+  { name: "My SQL", color: "rgb(113, 90, 90)" },
+  { name: "Git-Hub", color: "rgb(113, 90, 90)" },
+  { name: "React", color:  "rgb(113, 90, 90)" },
+  { name: "Node.js", color:  "rgb(113, 90, 90)" }
 ];
 
 const SwipeableCards = () => {

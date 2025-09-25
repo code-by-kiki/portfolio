@@ -1,17 +1,63 @@
 import React from "react";
+import picture from '../assest/profile-pic.jpg';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Resumedatas(props)
 {
     return(
-        <div className="container-fulid">
+        <div className="container-fulid" style={{fontFamily:'serif'}}>
             <div className="row mt-5" style={{background:"rgb(68, 68, 78)", padding:'10px'}}>
             </div>
             <div className="row">
-                <div className="col">
-                    <h1 className="mt-5" style={{alignItems:"justify-content-end"}}>{props.name}</h1>
+                <div className="col-6 mt-3" style={{textAlign:'start'}}>
+                    <img src={picture} alt="Krithika Profile" style={{ maxWidth: '150px',borderRadius:'25rem', }} />
+                    <div className="row">
+                       <div className="col mt-5 fw-bold">
+                        <h4 className="fw-blod fs-2 mb-4">Contact</h4>
+                        <p><i class="bi bi-telephone"></i> 6374760410</p>
+                        <p><i class="bi bi-envelope"></i> root.krithika10@gmail.com</p>
+                        <p><i class="bi bi-linkedin"></i><a href="www.linkedin.com/in/krithika-selvam-km10" className="text-decoration-none text-dark"> Linkedin</a> </p>
+                        <p><i class="bi bi-github"></i><a href="https://github.com/ " className="text-decoration-none text-dark"> Repository</a></p>
+                       </div>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col ">
+                             <h4 className="fw-blod fs-2 mb-4">Certification</h4>
+                            <pre>🎓 Nss</pre>
+                            <pre>🎓 Digital Marketing</pre>
+                            <pre>🎓 Java Full-Stack Web Development</pre>  
+                        </div>
+                    </div>
+                   <div className="row mt-5">
+                        <div className="col" style={{fontFamily:'serif'}}>
+                             <h4 className="fw-blod fs-2 mb-4">Internship</h4> 
+                           <p><b>Organization : </b><i>State Bank of India</i></p>
+                           <p><b>Role : </b><i>Intern</i></p>
+                           <p><b>Duration : </b><i>Two Weeks</i></p>
+                           <p><b>Responsibilities : </b><i>Customer Interation and Record Maintenance</i></p>
+                        </div>
+                    </div>
+                   <div className="row mt-5">
+                        <div className="col" >
+                             <h4 className="fw-blod fs-2 mb-4">Language</h4>
+                            <p><i class="bi bi-translate"></i>  Tamil</p>
+                            <p><i class="bi bi-translate"></i>  English</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div className="col-6">
+                    <h1 className="mt-5" style={{textAlign:'end'}}>{props.name}</h1>
+                    <pre style={{textAlign:'end'}}> Web Developer</pre>
+                    <div className="row mt-5" style={{textAlign:'start'}}>
+                        <h4 className="mb-3 fw-blod fs-2 "><i>Profile</i></h4>
+                        <p style={{textAlign:'justify',textIndent:'5rem'}}>Economics graduate with hands-on training in full-stack web development and a 
+                             strong foundation in business analysis and data-driven problem solving. Proficient in building responsive websites and dynamic applications using modern technologies. Passionate about creating meaningful digital solutions and continuously expanding technical expertise.
+                             Seeking opportunities to grow as a developer and contribute to impactful, real-world projects.
+                        </p>
+                    </div>
                 </div>
             </div>
-         
         </div>
     );
 }
