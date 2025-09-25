@@ -34,7 +34,7 @@ const SwipeableCards = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <div className="relative w-80 h-96">
-        <h4 className="mb-5"><b>Skills</b></h4>
+        <h3 className="text-center mb-4">Skills</h3>
         <AnimatePresence>
           <motion.div
             key={skills[index].name}
