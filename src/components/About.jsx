@@ -97,10 +97,9 @@ const About = () => {
           {hobbies.map((hobby, index) => (
             <div
               key={index}
-              className="hobby-card p-3 text-center border rounded"
-              style={{ minWidth: '120px', flex: '1 1 120px' }}
+              className="hobby-card p-3 text-center border rounded "
+              style={{ minWidth: '10px', flex: '1 1 120px',backgroundColor:'rgb(68, 68, 78)',color:'whitesmoke'}}
             >
-              <i className="bi bi-star-fill text-warning mb-2"></i>
               <h6 className="mb-0">{hobby}</h6>
             </div>
           ))}
