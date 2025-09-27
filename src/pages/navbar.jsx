@@ -2,6 +2,7 @@ import React from "react";
 import Home from "../components/home";
 import About from "../components/About";
 import Navbar from '../components/navbar';
+import Contact from "../components/Contact";
 import Datas from "./Resume";
 
 
@@ -37,7 +38,9 @@ return (
        <Datas/>
 </Section>
 
-<Section id="contact" title="Contact"></Section>
+<Section id="contact" title="Contact">
+    <Contact/>
+</Section>
 </main>
 </div>
 );
