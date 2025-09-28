@@ -4,6 +4,7 @@ import About from "../components/About";
 import Navbar from '../components/navbar';
 import Contact from "../components/Contact";
 import Datas from "./Resume";
+import Project from "../components/Project";
 
 
 function Section({ id, title, children }) {
@@ -31,7 +32,7 @@ return (
 </Section>
 
 <Section id="project" title="Project">
- 
+   <Project/>
 </Section>
 
 <Section id="resume" title="Resume">

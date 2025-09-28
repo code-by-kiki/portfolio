@@ -18,6 +18,9 @@ function Resumedatas() {
     {name:'Tamil'}, {name: 'English'}
    ]
    
+   
+
+
    const frontend=[{name: "Html",icon:<i class="bi bi-filetype-html" id="icons"></i>},{name: "Css",icon:<i class="bi bi-filetype-css" id="icons"></i>},{name: "Javascript",icon:<i class="bi bi-javascript" id="icons"></i>},{name: "Bootstrap",icon:<i class="bi bi-bootstrap" id="icons"></i>},{name: "React",icon:<i class="bi bi-filetype-jsx " id="icons"></i>}];
    
    const backend=[{name:"Core Java",icon:<i class="bi bi-filetype-java" id="icons"></i>},{name:"Java",icon:<i class="bi bi-filetype-java"id="icons"></i>}]
@@ -39,7 +42,7 @@ function Resumedatas() {
 
           <div className="row">
             <div className="col mt-5 fw-bold">
-              <h4 className="fw-bold fs-2 mb-4">Contact</h4>
+              <h4 className="fw-bold fs-2 mb-4"><i>Contact</i></h4>
               <p><i className="bi bi-telephone"></i> 6374760410</p>
               <p><i className="bi bi-envelope"></i> root.krithika10@gmail.com</p>
               <p><i className="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/krithika-selvam-km10" className="text-decoration-none text-dark">Linkedin</a></p>
@@ -49,7 +52,7 @@ function Resumedatas() {
 
           <div className="row mt-5">
             <div className="col">
-              <h4 className="fw-bold fs-2 mb-4">Certification</h4>
+              <h4 className="fw-bold fs-2 mb-4"><i>Certification</i></h4>
               {certification.map((certificate,index)=>
               (
                <div key={index}>
@@ -61,7 +64,7 @@ function Resumedatas() {
           </div>
          
           <div className="row mt-5">
-              <h4 className="fw-bold fs-2 mb-4">Internship</h4>
+              <h4 className="fw-bold fs-2 mb-4"><i>Internship</i></h4>
               <p><b>Organization:</b> <i>State Bank of India</i></p>
               <p><b>Role:</b> <i>Intern</i></p>
               <p><b>Duration:</b> <i>Two Weeks</i></p>
@@ -69,7 +72,7 @@ function Resumedatas() {
           </div>
           
          <div className="row mt-5">
-          <h4>Soft Skills</h4>
+          <h4 className="fw-bold fs-2 mb-4"><i>Soft Skills</i></h4>
            {skill.map((Skills,index)=>
           (
             <div key={index}>
@@ -79,7 +82,7 @@ function Resumedatas() {
          </div>
 
           <div className="row mt-5">
-            <h4>Language</h4>
+            <h4 className="fw-bold fs-2 mb-4"><i>Language</i></h4>
             {language.map((lang,index)=>
             (
               <div key={index}>
@@ -103,17 +106,17 @@ function Resumedatas() {
             </p>
           </div>
           <div className="row mt-5">
-            <h4 className="mb-3 fw-bold fs-2">Object</h4>
+            <h4 className="mb-3 fw-bold fs-2"><i>Object</i></h4>
             <p>Economics graduate and certified full-stack developer passionate about building 
               impactful digital solutions and growing through real-world experience.</p>
           </div>
           
           <div className="row mt-5">
-             <h4 className="mb-4 fw-bold fs-2">Eduction</h4>
+             <h4 className="mb-4 fw-bold fs-2"><i>Eduction</i></h4>
               {Eduction.map((data,index)=>
               (
                 <div key={index}>
-                  {<><h3><i class="bi bi-book-half"></i>{data.studied}-{data.name}</h3>
+                  {<><h3><i class="bi bi-book-half " style={{color:'darkslategray'}}></i> {data.studied}-{data.name}</h3>
                    <p><i class="bi bi-calendar2-week " style={{textIndent:'3rem'}}></i> {data.passout} <i class="bi bi-geo-alt"> {data.places}</i> </p>
                   </>}
                 </div>
@@ -123,8 +126,8 @@ function Resumedatas() {
           </div>
 
           <div className="row mt-5">
-                <h4 className="mb-4 fw-bold fs-2">Technical Skill</h4>
-                <h4><i><b>Frontend</b></i> </h4>
+                <h4 className="mb-4 fw-bold fs-2"><i>Technical Skill</i></h4>
+                <h4><b>Frontend</b></h4>
                 <dl className="list-inline d-flex flex-wrap gap-4 mt-4">
                    {frontend.map((skill,index)=>
                     (
@@ -132,7 +135,7 @@ function Resumedatas() {
                     )
                     )} 
                  </dl>
-                 <h4 className="mt-3"><i><b>Backend</b></i></h4>
+                 <h4 className="mt-3"><b>Backend</b></h4>
                  <dl className="list-item d-flex flex-wrap gap-4 mt-4">
                      {backend.map((skill,index)=>
                       (
@@ -140,7 +143,7 @@ function Resumedatas() {
                       ))}
                  </dl>
                 
-                 <h4 className="mt-3"><i><b>DataBase</b></i></h4>
+                 <h4 className="mt-3"><b>DataBase</b></h4>
                   <dl className="list-inline d-flex flex-wrap gap-4 mt-4">
                  {database.map((skill,index)=>
                    (
@@ -148,11 +151,11 @@ function Resumedatas() {
                    ))}
                  </dl>
 
-                 <h4 className="mt-3"><i><b>Tools</b></i></h4>
+                 <h4 className="mt-3"><b>Tools</b></h4>
                   <dl className="list-inline d-flex flex-wrap gap-4">
                     {tool.map((skill,index)=>
                      (
-                      <dt className="list-inline-item">{skill.icon} {skill.name} </dt>
+                      <dt className="list-inline-item"> {skill.icon} {skill.name} </dt>
                       ))}
                  </dl>
                </div>

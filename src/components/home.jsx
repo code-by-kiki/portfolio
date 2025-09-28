@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const Introduction = () => {
   return (
-    <div style={{ backgroundColor: '#e3e6e5', minHeight: '100vh', padding: '4rem 0' }}>
+    <div>
       <body style={{ backgroundColor: '#e3e6e5', minHeight: '100vh', padding: '4rem 0' }}>
 
       </body>
