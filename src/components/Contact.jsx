@@ -13,7 +13,7 @@ function Contact (){
   <div className="row  d-flex align-items-start">
     <h1 className="mt-5">Send Me A Message</h1>
     <div className="col-md-6 col-sm-12 mt-5  pt-5 text-start">
-      <h3 className="mb-4">Contact Me !</h3>
+      <h3 className="mb-4">Contact Me </h3>
       <section style={{ textIndent: "3rem", marginTop: "3rem", fontStyle: 'italic' }}>
         <p className="mb-4"><i className="bi bi-geo-alt-fill"></i> Thirupuvanam Sivagangai</p>
         <p className="mb-4"><i className="bi bi-telephone"></i> 6374760410</p>
@@ -24,7 +24,7 @@ function Contact (){
     <div className="col-md-6 col-sm-12 mt-5 pt-5">
      <form>
         <input type="text" placeholder="Name" className="form-control mb-3" style={{ maxWidth: '100%' }} /><br />
-        <input type="number" placeholder="Number" className="form-control mb-3" style={{ maxWidth: '100%' }} /><br />
+        <input type='email' placeholder="E-Mail" className="form-control mb-3" style={{ maxWidth: '100%' }} /><br />
         <textarea placeholder="Content" className="form-control mb-3" style={{ maxWidth: '100%', height: '200px' }} /><br />
     </form>
       <button className="btn btn-button mb-5 " style={{backgroundColor:'rgb(162, 213, 198)'}}>Send me</button>

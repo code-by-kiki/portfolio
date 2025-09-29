@@ -70,6 +70,41 @@ function Resumedatas() {
               <p><b>Duration:</b> <i>Two Weeks</i></p>
               <p><b>Responsibilities:</b> <i>Customer Interaction and Record Maintenance</i></p>
           </div>
+
+           <div className="row mt-5">
+                <h4 className="mb-4 fw-bold fs-2"><i>Technical Skill</i></h4>
+                <h4><b>Frontend</b></h4>
+                <dl className="list-inline d-flex flex-wrap gap-4 mt-4">
+                   {frontend.map((skill,index)=>
+                    (
+                      <dt key={index} className="list-inline-item "> {skill.icon }   {skill.name}</dt>
+                    )
+                    )} 
+                 </dl>
+                 <h4 className="mt-3"><b>Backend</b></h4>
+                 <dl className="list-item d-flex flex-wrap gap-4 mt-4">
+                     {backend.map((skill,index)=>
+                      (
+                         <dt key={index} className="list-inline-item">{skill.icon} {skill.name} </dt>
+                      ))}
+                 </dl>
+                
+                 <h4 className="mt-3"><b>DataBase</b></h4>
+                  <dl className="list-inline d-flex flex-wrap gap-4 mt-4">
+                 {database.map((skill,index)=>
+                   (
+                    <dt className="list-inline-item">{skill.icon} {skill.name}</dt>
+                   ))}
+                 </dl>
+
+                 <h4 className="mt-3"><b>Tools</b></h4>
+                  <dl className="list-inline d-flex flex-wrap gap-4">
+                    {tool.map((skill,index)=>
+                     (
+                      <dt className="list-inline-item"> {skill.icon} {skill.name} </dt>
+                      ))}
+                 </dl>
+               </div>
           
          <div className="row mt-5">
           <h4 className="fw-bold fs-2 mb-4"><i>Soft Skills</i></h4>
@@ -125,40 +160,7 @@ function Resumedatas() {
               )}
           </div>
 
-          <div className="row mt-5">
-                <h4 className="mb-4 fw-bold fs-2"><i>Technical Skill</i></h4>
-                <h4><b>Frontend</b></h4>
-                <dl className="list-inline d-flex flex-wrap gap-4 mt-4">
-                   {frontend.map((skill,index)=>
-                    (
-                      <dt key={index} className="list-inline-item "> {skill.icon }   {skill.name}</dt>
-                    )
-                    )} 
-                 </dl>
-                 <h4 className="mt-3"><b>Backend</b></h4>
-                 <dl className="list-item d-flex flex-wrap gap-4 mt-4">
-                     {backend.map((skill,index)=>
-                      (
-                         <dt key={index} className="list-inline-item">{skill.icon} {skill.name} </dt>
-                      ))}
-                 </dl>
-                
-                 <h4 className="mt-3"><b>DataBase</b></h4>
-                  <dl className="list-inline d-flex flex-wrap gap-4 mt-4">
-                 {database.map((skill,index)=>
-                   (
-                    <dt className="list-inline-item">{skill.icon} {skill.name}</dt>
-                   ))}
-                 </dl>
-
-                 <h4 className="mt-3"><b>Tools</b></h4>
-                  <dl className="list-inline d-flex flex-wrap gap-4">
-                    {tool.map((skill,index)=>
-                     (
-                      <dt className="list-inline-item"> {skill.icon} {skill.name} </dt>
-                      ))}
-                 </dl>
-               </div>
+         
            </div>
         </div>
     </div>
